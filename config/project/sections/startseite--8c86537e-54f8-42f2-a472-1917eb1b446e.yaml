@@ -3,15 +3,15 @@ enableVersioning: true
 entryTypes:
   -
     uid: bdf6317d-0df7-449f-a937-a1a274ffb106 # Seitenblöcke
-handle: pages
+handle: startseite
 maxAuthors: 1
-name: Seiten
+name: Startseite
 previewTargets:
   -
     __assoc__:
       -
         - label
-        - Page
+        - 'Primäre Eintrag Seite'
       -
         - urlFormat
         - '{url}'
@@ -23,9 +23,6 @@ siteSettings:
   08c386f4-5a41-4c9f-8282-f6785af06bfc: # Craft CMS Starter
     enabledByDefault: true
     hasUrls: true
-    template: _pages/base.twig
-    uriFormat: '{slug}'
-structure:
-  maxLevels: null
-  uid: 4c0a1eed-b32a-43d6-ad31-77d4dc6ba447
-type: structure
+    template: startseite/_entry.twig
+    uriFormat: __home__
+type: single

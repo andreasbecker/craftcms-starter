@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: form
 instructions: null
-name: Form
+name: Formular
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,7 +11,7 @@ settings:
   minRelations: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false

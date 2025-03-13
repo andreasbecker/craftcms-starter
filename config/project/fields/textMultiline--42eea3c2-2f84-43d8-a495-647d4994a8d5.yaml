@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: textMultiline
 instructions: null
-name: 'Text - Multiline'
+name: 'Text - mehrzeilig'
 searchable: false
 settings:
   byteLimit: null

@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: padding
 instructions: null
-name: Padding
+name: Abstand
 searchable: false
 settings:
   customOptions: false
@@ -10,7 +10,7 @@ settings:
       __assoc__:
         -
           - label
-          - 'Top & Bottom'
+          - 'Oben & Unten'
         -
           - value
           - topBottom
@@ -21,7 +21,7 @@ settings:
       __assoc__:
         -
           - label
-          - Top
+          - Oben
         -
           - value
           - top
@@ -32,7 +32,7 @@ settings:
       __assoc__:
         -
           - label
-          - Bottom
+          - Unten
         -
           - value
           - bottom
@@ -43,7 +43,7 @@ settings:
       __assoc__:
         -
           - label
-          - None
+          - Keiner
         -
           - value
           - none
