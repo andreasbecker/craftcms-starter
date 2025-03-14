@@ -9,7 +9,7 @@ settings:
     - ariaLabel
   fullGraphqlData: false
   maxLength: 255
-  showLabelField: false
+  showLabelField: true
   typeSettings:
     __assoc__:
       -

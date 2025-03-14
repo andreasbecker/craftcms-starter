@@ -1,18 +1,21 @@
-{#
-
-{% set fonts = {
+{# {% set fonts = {
     inter: [
         {
-            file: 'inter',
-            weight: 400,
+            file: 'InterVariable',
+            weight: '100 900',
             style: 'normal'
+        },
+        {
+            file: 'InterVariable-Italic',
+            weight: '100 900',
+            style: 'italic'
         }
     ]
 } %}
 
 {% for family in fonts %}
     {% for font in family %}
-        <link rel="preload" href="/dist/fonts/{{ font.file }}.woff2" as="font" crossorigin>
+        <link rel="preload" href="/dist/fonts/{{ font.file }}.ttf" as="font" crossorigin>
         <style>
             @font-face {
                 font-family: "{{ family }}";
@@ -23,7 +26,7 @@
                     url("/dist/fonts/{{ font.file }}.woff") format("woff"),
                     url("/dist/fonts/{{ font.file }}.ttf") format("truetype"),
                     url("/dist/fonts/{{ font.file }}.svg#{{ font.file }}") format("svg");
-                font-weight: {{ font.weight }};
+                font-weight: "{{ font.weight }}";
                 font-style: "{{ font.style }}";
                 font-display: swap;
             }
@@ -31,4 +34,4 @@
     {% endfor %}
 {% endfor %}
 
-#}
+ #}

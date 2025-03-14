@@ -22,7 +22,19 @@
 
       </head>
 
-      <body>
+      <body class="font-sans">
+
+         {% if craft.app.config.general.devMode %}
+        <div class="fixed top-0 left-0 z-[10000] bg-white p-2 shadow-xl text-black">
+            <div class="sm:hidden">XS</div>
+            <div class="hidden sm:block md:hidden">SM</div>
+            <div class="hidden md:block lg:hidden">MD</div>
+            <div class="hidden lg:block xl:hidden">LG</div>
+            <div class="hidden xl:block 2xl:hidden">XL</div>
+            <div class="hidden 2xl:block">2XL</div>
+        </div>
+
+        {% endif %}
 
          {% block body %}{% endblock %}
 

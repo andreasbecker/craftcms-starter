@@ -2,8 +2,8 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: bdf6317d-0df7-449f-a937-a1a274ffb106 # Seitenblöcke
-handle: startseite
+    uid: bdf6317d-0df7-449f-a937-a1a274ffb106 # Standardseite
+handle: homepage
 maxAuthors: 1
 name: Startseite
 previewTargets:
@@ -23,6 +23,6 @@ siteSettings:
   08c386f4-5a41-4c9f-8282-f6785af06bfc: # Craft CMS Starter
     enabledByDefault: true
     hasUrls: true
-    template: startseite/_entry.twig
+    template: homepage/_entry.twig
     uriFormat: __home__
 type: single

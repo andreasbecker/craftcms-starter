@@ -39,6 +39,7 @@ install:
 	ddev exec php craft plugin/install formie
 	ddev exec php craft plugin/install minify
 	ddev exec php craft plugin/install ckeditor
+	ddev exec php craft plugin/install navigation
 	ddev exec php craft up --interactive=0
 	ddev exec php craft update all
 	ddev launch; \

@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  71660a2a-5e9c-456e-9584-e81e70baf6f2:
+  b842f94f-1052-4f8b-b66e-22aa349fb4b2:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-03-13T16:04:50+00:00'
+            dateAdded: '2025-03-14T15:00:15+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,17 +31,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 0cf026d5-6d08-4e27-8a1f-ab30bca41c98
+            uid: d0f73118-93d0-4384-838c-764a05d65c20
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 0102572d-d127-40b1-b9c0-704387cc932f
+        name: Inhalt
+        uid: def389c8-d05e-4736-9b00-b5962d49715a
         userCondition: null
-handle: pageBlocks
+handle: pricing
 hasTitleField: true
-icon: chimney
-name: Seitenblöcke
+icon: null
+name: Preistabelle
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

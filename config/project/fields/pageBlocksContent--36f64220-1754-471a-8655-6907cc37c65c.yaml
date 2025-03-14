@@ -1,0 +1,30 @@
+columnSuffix: null
+handle: pageBlocksContent
+instructions: null
+name: Abschnitte
+searchable: false
+settings:
+  createButtonLabel: 'Neuer Abschnitt'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 364db758-c9ca-4923-8a45-9ff5998f1177 # Hero
+    -
+      __assoc__:
+        -
+          - uid
+          - f11d8cff-ef16-421a-bd8e-0b5ef8bf7d35 # Preistabelle
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
