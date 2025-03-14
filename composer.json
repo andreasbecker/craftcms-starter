@@ -1,5 +1,5 @@
 {
-  "name": "madebyshape/craft-cms",
+  "name": "andreasbecker/craftcms-starter",
   "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
