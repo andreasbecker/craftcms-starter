@@ -1,5 +1,5 @@
 {
-  "name": "craft-cms",
+  "name": "craftcms-starter",
   "private": true,
   "version": "5.0.0",
   "type": "module",
@@ -22,13 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/madebyshape/craft-cms.git"
+    "url": "git+https://github.com/andreasbecker/craftcms-starter.git"
   },
-  "author": "Jason Mayo (@bymayo)",
-  "authorUrl": "https://madebyshape.co.uk",
+  "author": "Andreas Becker (@andreasbecker)",
+  "authorUrl": "https://frischkraft.de",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/madebyshape/craft-cms/issues"
+    "url": "https://github.com/andreasbecker/craftcms-starter/issues"
   },
-  "homepage": "https://github.com/madebyshape/craft-cms#readme"
+  "homepage": "https://github.com/andreasbecker/craftcms-starter#readme"
 }
