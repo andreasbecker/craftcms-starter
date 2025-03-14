@@ -1,14 +1,12 @@
-dateModified: 1741964501
+dateModified: 1741969535
 email:
   fromEmail: $CRAFT_SYSTEM_EMAIL
   fromName: $CRAFT_SITE_NAME
   replyToEmail: null
   template: _emails/system.twig
   transportSettings:
-    apiKey: $MAILGUN_API_KEY
-    domain: $MAILGUN_DOMAIN
-    endpoint: $MAILGUN_ENDPOINT
-  transportType: craft\mailgun\MailgunAdapter
+    command: '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025'
+  transportType: craft\mail\transportadapters\Sendmail
 fs:
   local:
     hasUrls: true
@@ -21,15 +19,35 @@ fs:
     hasUrls: true
     name: Servd
     settings:
-      cdnUrlPattern: ''
-      customSubfolder: ''
-      makeUploadsPublic: true
-      optimisePrefix: ''
-      optimiseUrlPattern: ''
-      projectSlug: ''
-      securityKey: ''
-      subfolder: /local/
-    type: servd\AssetStorage\AssetsPlatform\Fs
+      errorMessage: 'Unable to find component class ''servd\AssetStorage\AssetsPlatform\Fs''.'
+      expectedType: servd\AssetStorage\AssetsPlatform\Fs
+      settings:
+        __assoc__:
+          -
+            - cdnUrlPattern
+            - ''
+          -
+            - customSubfolder
+            - ''
+          -
+            - makeUploadsPublic
+            - true
+          -
+            - optimisePrefix
+            - ''
+          -
+            - optimiseUrlPattern
+            - ''
+          -
+            - projectSlug
+            - ''
+          -
+            - securityKey
+            - ''
+          -
+            - subfolder
+            - /local/
+    type: craft\fs\MissingFs
     url: 'https://cdn2.assets-servd.host/'
 meta:
   __names__:
@@ -72,15 +90,6 @@ plugins:
     enabled: true
     licenseKey: OMBPJ4OA1BIW3HI7IWXHBC3R
     schemaVersion: 3.4.8
-  imager-x:
-    edition: lite
-    enabled: false
-    licenseKey: 6MY59ANGFCG7H9OWDQTCE0PK
-    schemaVersion: 4.0.0
-  mailgun:
-    edition: standard
-    enabled: false
-    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: true
@@ -95,29 +104,6 @@ plugins:
     enabled: true
     licenseKey: 795D0IRXMO0BEU95Z64ILX03
     schemaVersion: 3.0.12
-  servd-asset-storage:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.0.0
-    settings:
-      adjustFeedmeLogs: ''
-      assetsEnvironment: $SERVD_ASSET_ENVIRONMENT
-      assetsEnvironmentOverwrite: ''
-      cacheClearMode: full
-      clearCachesOnSave: never
-      disableDynamic: ''
-      disableTransforms: ''
-      fsMapsEnabled: ''
-      imageAutoConversion: webp
-      injectCors: '1'
-      projectSlug: $SERVD_PROJECT_SLUG
-      securityKey: $SERVD_SECURITY_KEY
-      suppressWarnings: '1'
-      useLocalVolumes: false
-  sprig:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
   vite:
     edition: standard
     enabled: true

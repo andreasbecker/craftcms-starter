@@ -170,7 +170,7 @@ fieldLayouts:
         uid: b80700ad-a9b3-4fc6-ae71-e91d39846d10
         userCondition: null
 handle: mainNav
-instructions: ''
+instructions: null
 maxNodes: null
 name: Hauptnavigation
 permissions:
