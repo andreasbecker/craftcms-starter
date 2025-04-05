@@ -1,0 +1,69 @@
+color: null
+fieldLayouts:
+  3e4a0fa5-cbdf-4474-ae81-f1711adb7b1f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T12:53:24+00:00'
+            elementCondition: null
+            fieldUid: 0b2eb52b-6305-475a-a893-015343c2face # Abstand oben
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32432897-be10-4db8-843f-bf1f67e72610
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-31T12:53:24+00:00'
+            elementCondition: null
+            fieldUid: c4366270-fb71-48ba-ba8f-f8c33149b695 # Abstand unten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2966788-353b-4107-9626-a1dd9d5628ac
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-28T15:14:04+00:00'
+            elementCondition: null
+            fieldUid: 1ee87cef-8728-43ce-a4e7-965bf407f8ff # Akkordeon-Einträge
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a55496a8-4e1f-4b24-a58a-029b3f6d5433
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 17312af7-5f3e-4b35-9598-26b222ee3e42
+        userCondition: null
+handle: accordion
+hasTitleField: false
+icon: shutters
+name: Akkordeon
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

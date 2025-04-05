@@ -3,6 +3,8 @@ enableVersioning: true
 entryTypes:
   -
     uid: bdf6317d-0df7-449f-a937-a1a274ffb106 # Standardseite
+  -
+    uid: 244e7f48-116c-4969-8e95-b62ac360fc1a # Blog-Übersicht
 handle: pages
 maxAuthors: 1
 name: Seiten
@@ -20,7 +22,7 @@ previewTargets:
         - '{url}'
 propagationMethod: all
 siteSettings:
-  08c386f4-5a41-4c9f-8282-f6785af06bfc: # Craft CMS Starter
+  08c386f4-5a41-4c9f-8282-f6785af06bfc: # $CRAFT_SITE_NAME
     enabledByDefault: true
     hasUrls: true
     template: _pages/base.twig

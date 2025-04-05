@@ -1,0 +1,16 @@
+{% macro getBorderClasses(borderPosition, borderColor) %}
+{% apply spaceless %}
+    {% set borderPosition = borderPosition|default('none')|trim %}
+    {% set borderColor = borderColor|default('primary')|trim %}
+    
+    {% set borderPositions = {
+        'none': '',
+        'top': 'border-t-4 border-' ~ borderColor,
+        'bottom': 'border-b-4 border-' ~ borderColor,
+        'topbottom': 'border-t-4 border-b-4 border-' ~ borderColor
+    } %}
+    
+    {# Simplified logic - directly try to access the key with a fallback #}
+    {{ attribute(borderPositions, borderPosition) }}
+{% endapply %}
+{% endmacro %}

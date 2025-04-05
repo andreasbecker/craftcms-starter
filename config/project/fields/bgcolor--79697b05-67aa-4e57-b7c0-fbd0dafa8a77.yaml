@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: bgcolor
+instructions: null
+name: Hintergrundfarbe
+searchable: false
+settings:
+  allowCustomColors: false
+  palette:
+    -
+      __assoc__:
+        -
+          - color
+          - '#dddddd'
+        -
+          - label
+          - Hellgrau
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

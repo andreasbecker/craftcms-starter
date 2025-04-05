@@ -53,5 +53,5 @@ settings:
     - email
     - tel
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Link

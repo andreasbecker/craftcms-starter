@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  16fd0bb3-8bde-4a27-b503-fd36f995ab0d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-28T15:05:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b85b35ca-9261-4886-bee2-7d3481a125aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T15:09:09+00:00'
+            elementCondition: null
+            fieldUid: 3ae1a988-07ef-40a0-8438-62f2201ac267 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96ca6889-3fe8-4147-b251-c558eefed9af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T17:19:53+00:00'
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Artikelbild
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84ef2f86-02b2-47f2-8947-5d79c8a473d9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c998965a-51e5-4fb3-af8d-11890b9ee833
+        userCondition: null
+handle: blogpost
+hasTitleField: true
+icon: null
+name: Blog-Eintrag
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

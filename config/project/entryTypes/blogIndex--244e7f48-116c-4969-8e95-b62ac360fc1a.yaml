@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  99f557a1-6745-4dff-be28-bd2c77a17162:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-28T16:56:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e20dcf9f-c74a-44c2-88e6-253ee3a3ba64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T16:58:17+00:00'
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Einfach
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9f32118-0089-4191-b7c5-edc21b6c1861
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 8710ccda-8fbe-442e-899e-a9918f47069f
+        userCondition: null
+handle: blogIndex
+hasTitleField: true
+icon: null
+name: Blog-Übersicht
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

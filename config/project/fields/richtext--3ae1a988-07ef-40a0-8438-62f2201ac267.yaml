@@ -1,0 +1,38 @@
+columnSuffix: null
+handle: richtext
+instructions: null
+name: Text
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 90893a2e-023d-485b-bc6a-50ccbef38178 # Erweitert
+  createButtonLabel: Element
+  defaultTransform: null
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 511005a7-3368-4c6b-a09f-9f6c147450e7 # Bild(er)
+    -
+      __assoc__:
+        -
+          - uid
+          - 870c91e4-d0b7-49c2-bfde-6ef0908c97e0 # Zitat
+    -
+      __assoc__:
+        -
+          - uid
+          - f9da408b-7d04-4fb0-8afc-c63c73b0f471 # CTA-Block
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

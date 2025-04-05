@@ -1,0 +1,65 @@
+{% set code = block.code ??? code ??? '{"type":"slide","perPage":1,"gap":"1.5rem"}' %}
+{% set bgcolor = block.bgcolor ??? bgcolor ??? '#fff' %}
+{% set headline = block.headline ??? headline ??? '' %}
+{% set headlineSize = block.headlineSize ??? headlineSize ??? 'large' %}
+{% set button = block.linkButton ??? button ??? null %}
+{% set sectioninfo = block.sectioninfo ??? sectioninfo ??? '' %}
+{% set sliderType = block.sliderType ??? sliderType ??? 'blogposts' %}
+{% set slides = block.slides.all() ??? slides ??? [] %}
+{% set blogposts = craft.entries.section('blog').limit(6).all() ??? blogposts ??? [] %}
+{% set anker = block.anker ??? anker ??? '' %}
+
+<section {% if anker %}id="{{ anker }}"{% endif %} class="py-20" style="background-color: {{ bgcolor }}">
+    <div class="container mx-auto px-6">
+        {% if headlineSize == 'large' %}
+        <div class="grid grid-cols-12 items-end mb-10 lg:mb-20">
+            <span class="text-lg lg:text-xl col-span-12 lg:col-span-2 block mb-4 lg:mb-0">{{ sectioninfo }}</span>
+            <h2 class="text-3xl lg:text-6xl font-serif col-span-10 lg:col-span-10">{{ headline }}</h2>
+        </div>
+        {% endif %}
+        <div class="grid grid-cols-12">
+            <div class="lg:col-start-3 col-span-12 lg:col-span-10">
+                <div class="lg:pl-40">
+                    {% if headlineSize == 'small' %}
+                        <h3 class="text-3xl font-serif mb-10">{{ headline }}</h3>
+                    {% endif %}
+                    {% if button %}
+                        <a href="{{ button.url }}" class="btn border-shadow-beere mb-10">{{ button.label }}</a>
+                    {% endif %}
+                    {% if slides|length > 0 or blogposts|length > 0 %}
+                        <div class="splide" role="group" data-splide='{{ code }}' aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    {% if sliderType == 'blogposts' %}
+                                        {% for blogpost in blogposts %}
+                                            <li class="splide__slide">
+                                                <div class="flex flex-col gap-5">
+                                                    {% if blogpost.image|length > 0 %}
+                                                        <a href="{{ blogpost.url }}"><img src="{{ blogpost.image[0].getUrl('photo400x400') }}" alt="{{ blogpost.image[0].title }}" class="rounded-lg"></a>
+                                                    {% endif %}
+                                                    <div class="">
+                                                        <a href="{{ blogpost.url }}"><h3 class="text-2xl font-serif mb-3">{{ blogpost.title }}</h3></a>
+                                                        <div class="prose">{{ blogpost.blogtext|chop(limit=6, unit='w', append='...') }}</div>
+                                                        <a href="{{ blogpost.url }}" class="btn border-shadow-beere mt-5 px-2 py-1 text-xs -translate-y-1 translate-x-1">mehr erfahren</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    {% else %}
+                                        {% for slide in slides %}
+                                            <li class="splide__slide">
+                                                <div class="prose max-w-none prose-p:text-lg px-0 md:px-20">
+                                                    {{ slide.text }}
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,55 @@
+columnSuffix: null
+handle: paddingTop
+instructions: null
+name: 'Abstand oben'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Kein Abstand'
+        -
+          - value
+          - none
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Klein
+        -
+          - value
+          - small
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Normal
+        -
+          - value
+          - normal
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Groß
+        -
+          - value
+          - large
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

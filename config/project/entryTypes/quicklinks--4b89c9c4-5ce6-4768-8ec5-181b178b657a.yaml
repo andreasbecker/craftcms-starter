@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  fae5a6e1-292d-4849-a777-2b2177be6f51:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-29T16:39:29+00:00'
+            elementCondition: null
+            fieldUid: 0b2eb52b-6305-475a-a893-015343c2face # Abstand oben
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a3bd25b-8b19-4609-97ab-0e4affb4d336
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-29T16:39:29+00:00'
+            elementCondition: null
+            fieldUid: c4366270-fb71-48ba-ba8f-f8c33149b695 # Abstand unten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75e2f896-63d8-4160-ba8c-c5e60649204f
+            userCondition: null
+            warning: null
+            width: 50
+        name: Inhalt
+        uid: 9899387c-e18a-4623-8c33-e90436f2c357
+        userCondition: null
+handle: quicklinks
+hasTitleField: false
+icon: null
+name: Quicklinks
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,7 +1,6 @@
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { ViteFaviconsPlugin } from 'vite-plugin-favicon2';
 import ViteRestart from 'vite-plugin-restart';
-import copy from 'rollup-plugin-copy';
 import tailwindcss from "@tailwindcss/vite";
 
 export default ({ command }) => ({
@@ -48,14 +47,7 @@ export default ({ command }) => ({
             inject: false,
             outputPath: '../favicons'
         }),
-        copy({
-            targets: [
-                { 
-                    src: 'src/public/**/*', 
-                    dest: 'web/dist'
-                }
-            ]
-        }),
+
         ViteImageOptimizer({})
     ]
 });

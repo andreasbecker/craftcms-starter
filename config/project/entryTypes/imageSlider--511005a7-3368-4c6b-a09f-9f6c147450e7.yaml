@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  e6d4c2e9-7820-4276-9132-e5ec8ec2ddaf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-28T15:23:34+00:00'
+            elementCondition: null
+            fieldUid: 5cbe08b7-b4bd-4a6b-be41-de9647b5eb19 # Bilder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dca7fa5b-94ea-44e7-bbf4-a9ad8b97ecfc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 10645e47-7912-43ad-8eaf-5b4df7a9f899
+        userCondition: null
+handle: imageSlider
+hasTitleField: false
+icon: null
+name: Bild(er)
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

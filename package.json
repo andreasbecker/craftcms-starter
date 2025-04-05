@@ -14,21 +14,19 @@
     "rollup-plugin-copy": "^3.5.0",
     "sharp": "^0.33.3",
     "svgo": "^3.2.0",
-    "tailwindcss": "^4.0.0",
+    "tailwindcss": "^4.1.2",
     "vite": "^5.2.0",
     "vite-plugin-favicon2": "^1.1.5",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-restart": "^0.4.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andreasbecker/craftcms-starter.git"
-  },
   "author": "Andreas Becker (@andreasbecker)",
   "authorUrl": "https://frischkraft.de",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/andreasbecker/craftcms-starter/issues"
-  },
-  "homepage": "https://github.com/andreasbecker/craftcms-starter#readme"
+  "dependencies": {
+    "@alpinejs/collapse": "^3.14.9",
+    "@splidejs/splide": "^4.1.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "lazysizes": "^5.3.2"
+  }
 }

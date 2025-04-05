@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: headlineSize
+instructions: null
+name: 'Überschrift Größe'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Groß (h1)'
+        -
+          - value
+          - h1
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Mittel (h2)'
+        -
+          - value
+          - h2
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Klein (h3)'
+        -
+          - value
+          - h3
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

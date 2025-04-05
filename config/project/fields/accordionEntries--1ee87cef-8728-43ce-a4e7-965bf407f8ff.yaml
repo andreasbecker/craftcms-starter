@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: accordionEntries
+instructions: null
+name: Akkordeon-Einträge
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cc0f830b-8e66-4b4b-bb84-4fea8b80a1eb # Akkordeon-Eintrag
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

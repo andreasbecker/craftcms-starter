@@ -1,0 +1,85 @@
+color: null
+fieldLayouts:
+  88569350-889c-4fc2-874f-fda26e3eb64f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T08:07:53+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: topline
+            includeInCards: false
+            instructions: null
+            label: Topline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a4f3c31-24a3-4fdc-a59f-5cad5fa1c7a3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T08:07:53+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Überschrift
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 471e87fa-1d36-4ccf-b4e2-c4fbb4c86b84
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T08:14:02+00:00'
+            elementCondition: null
+            fieldUid: ec145a24-b734-4dd5-8c4f-804dbcb0a597 # Text
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 293c92bf-1d1c-4aa6-8580-180161aa62b2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T08:07:53+00:00'
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4204b232-c0bd-4769-ae20-35343863731c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c2cbc5ff-7d85-4348-8b2c-fcf8fd2f6324
+        userCondition: null
+handle: card
+hasTitleField: false
+icon: null
+name: Kachel
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

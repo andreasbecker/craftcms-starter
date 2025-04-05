@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  b3f7a01e-67f9-460c-8aab-1cba1890db1a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-03T15:38:47+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Zitattext
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aaa547c9-08e8-43c3-b4df-8a3b3e92315a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-03T15:38:47+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: quoteauthor
+            includeInCards: false
+            instructions: null
+            label: Autor
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a554b23-44cd-4038-9280-87a453caab97
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c6e8f04c-bd0c-4b0d-ac43-cba873345248
+        userCondition: null
+handle: quote
+hasTitleField: false
+icon: null
+name: Zitat
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

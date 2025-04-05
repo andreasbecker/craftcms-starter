@@ -1,0 +1,9 @@
+{% set ctablocks = entry.ctablocks %}
+
+{% if ctablocks %}
+    <div class="flex flex-col md:flex-row justify-center gap-5">
+        {% for ctablock in ctablocks %}
+            {% include '_blocks/cta' with { block: ctablock } %}
+        {% endfor %}
+    </div>
+{% endif %}

@@ -1,0 +1,15 @@
+{% macro getPaddingClasses(topValue, bottomValue) %}
+{% apply spaceless %}
+    {% set paddingValues = {
+        'none': '',
+        'small': {'top': 'pt-18', 'bottom': 'pb-18'},
+        'normal': {'top': 'pt-40', 'bottom': 'pb-40'},
+        'large': {'top': 'pt-52', 'bottom': 'pb-52'}
+    } %}
+
+    {% set topClass = (topValue != 'none') ? attribute(paddingValues, topValue).top : '' %}
+    {% set bottomClass = (bottomValue != 'none') ? attribute(paddingValues, bottomValue).bottom : '' %}
+
+    {{ topClass }} {{ bottomClass }}
+{% endapply %}
+{% endmacro %}

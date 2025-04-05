@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @source '../../templates/**/*.twig';
 @source '../../templates/**/*.html';
@@ -29,7 +30,53 @@
   font-display: swap;
 }
 
+@utility border-shadow-* {
+  box-shadow: 0 0 0 0 --value(--color-*);
+  &:hover {
+    box-shadow: 0 0 0 3px --value(--color-*)
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-md bg-primary border-shadow-primary text-on-primary-dark px-6 py-2.5 text-sm font-semibold shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition;
+  }
+  .headline {
+    @apply font-medium leading-14 text-pretty tracking-tight mb-12;
+  }
+  .headline-1 {
+    @apply text-6xl sm:text-7xl leading-18;
+  }
+  .headline-2 {
+    @apply text-4xl sm:text-5xl mb-8;
+  }
+  .headline-3 {
+    @apply text-3xl leading-10 sm:text-4xl mb-6;
+  }
+  .nav-link {
+    @apply px-3.5 py-2.5 rounded-md no-underline transition font-medium underline-offset-2 hover:bg-primary hover:text-on-primary focus:outline-hidden;
+  }
+  .nav-link.active {
+    @apply bg-primary text-on-primary;
+  }
+}
+
 @theme {
+
+  --color-primary: #D7F53D;
+  --color-primary-dark: #b7d132;
+  --color-on-primary: #171C8F;
+  --color-on-primary-dark: #171C8F;
+  --color-secondary: #171C8F;
+  --color-secondary-dark: #0e1261;
+  --color-on-secondary: var(--color-white);
+  --color-on-secondary-dark: var(--color-white);
+  --color-surface: var(--color-white);
+  --color-surface-alt: var(--color-neutral-50);
+  --color-on-surface: var(--color-neutral-600);
+  --color-on-surface-strong: var(--color-neutral-900);
+  --color-outline: var(--color-neutral-300);
+  --color-outline-strong: var(--color-neutral-800);
   
   --breakpoint-*: initial;
   --breakpoint-xs: 375px;
@@ -40,40 +87,8 @@
   --breakpoint-2xl: 1320px;
 
 /* light theme */
-    --color-surface: var(--color-white);
-    --color-surface-alt: var(--color-neutral-50);
-    --color-on-surface: var(--color-neutral-600);
-    --color-on-surface-strong: var(--color-neutral-900);
-    --color-primary: var(--color-black);
-    --color-on-primary: var(--color-neutral-100);
-    --color-secondary: var(--color-neutral-800);
-    --color-on-secondary: var(--color-white);
-    --color-outline: var(--color-neutral-300);
-    --color-outline-strong: var(--color-neutral-800);
 
-    /* dark theme */
-    --color-surface-dark: var(--color-neutral-950);
-    --color-surface-dark-alt: var(--color-neutral-900);
-    --color-on-surface-dark: var(--color-neutral-300);
-    --color-on-surface-dark-strong: var(--color-white);
-    --color-primary-dark: var(--color-white);
-    --color-on-primary-dark: var(--color-black);
-    --color-secondary-dark: var(--color-neutral-300);
-    --color-on-secondary-dark: var(--color-black);
-    --color-outline-dark: var(--color-neutral-700);
-    --color-outline-dark-strong: var(--color-neutral-300);
 
-    /* shared colors */
-    --color-info: var(--color-sky-500);
-    --color-on-info: var(--color-white);
-    --color-success: var(--color-green-500);
-    --color-on-success: var(--color-white);
-    --color-warning: var(--color-amber-500);
-    --color-on-warning: var(--color-white);
-    --color-danger: var(--color-red-500);
-    --color-on-danger: var(--color-white);
-
-    --color-primary: #C2FF66;
 
     /* border radius */
     --radius-radius: var(--radius-sm);

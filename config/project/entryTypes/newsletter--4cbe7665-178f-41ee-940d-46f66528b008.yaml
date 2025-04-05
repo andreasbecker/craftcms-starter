@@ -1,0 +1,101 @@
+color: null
+fieldLayouts:
+  40fde698-1c57-4769-ad0b-3ce1f7b563a3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T16:15:49+00:00'
+            elementCondition: null
+            fieldUid: 0b2eb52b-6305-475a-a893-015343c2face # Abstand oben
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4af7c24e-0c80-4067-ba5b-4e4820bccef8
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-31T16:15:49+00:00'
+            elementCondition: null
+            fieldUid: c4366270-fb71-48ba-ba8f-f8c33149b695 # Abstand unten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4a56139-14de-4d5a-bfc3-ef4b699ddfc8
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-31T16:15:49+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: topline
+            includeInCards: false
+            instructions: null
+            label: Topline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20098a45-1256-4170-bb4e-5a47cf25938e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T16:15:49+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Überschrift
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d4af9d1e-456b-40bc-9509-da7d8c4e75f5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T16:15:49+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Anlesetext
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1761ff0-a29d-4e6c-b657-e90f5eb4618d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: bbf3e8c9-799d-45c4-8122-8a00677ef07f
+        userCondition: null
+handle: newsletter
+hasTitleField: false
+icon: newspaper
+name: Newsletter
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

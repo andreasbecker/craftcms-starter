@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  a39b1337-41a3-495b-934f-37673ec6fa55:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-28T15:12:00+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 12a11434-436b-495e-ac80-5e05afbdd719
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T15:13:54+00:00'
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Einfach
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c360affa-7be0-4695-aada-82a217856aa8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 7f8078d1-898a-4db2-b3b2-7392730f902a
+        userCondition: null
+handle: accordionEntry
+hasTitleField: true
+icon: null
+name: Akkordeon-Eintrag
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

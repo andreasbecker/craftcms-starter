@@ -1,0 +1,55 @@
+columnSuffix: null
+handle: border
+instructions: null
+name: Trennlinie
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Keine
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Oben
+        -
+          - value
+          - top
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Unten
+        -
+          - value
+          - bottom
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Oben und unten'
+        -
+          - value
+          - topbottom
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

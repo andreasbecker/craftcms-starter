@@ -1,0 +1,27 @@
+{#
+    Utility macros for handling images
+#}
+
+{% macro url(path, absolute = true) %}
+    {{ craft.vite.asset(path, absolute) }}
+{% endmacro %}
+
+{% macro image(path, alt = '', className = '', width = '', height = '') %}
+    <img src="{{ craft.vite.asset(path, true) }}" alt="{{ alt }}" class="{{ className }}" {% if width %}width="{{ width }}"{% endif %} {% if height %}height="{{ height }}"{% endif %} />
+{% endmacro %}
+
+{% macro responsiveImage(path, alt = '', className = '', sizes = '100vw', widths = [640, 768, 1024, 1280, 1536]) %}
+    {% set srcset = [] %}
+    {% for width in widths %}
+        {% set srcset = srcset|merge([craft.vite.asset(path, true) ~ ' ' ~ width ~ 'w']) %}
+    {% endfor %}
+    
+    <img 
+        src="{{ craft.vite.asset(path, true) }}" 
+        srcset="{{ srcset|join(', ') }}"
+        sizes="{{ sizes }}"
+        alt="{{ alt }}" 
+        class="{{ className }}" 
+        loading="lazy"
+    />
+{% endmacro %}

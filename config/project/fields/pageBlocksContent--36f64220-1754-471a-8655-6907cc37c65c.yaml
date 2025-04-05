@@ -11,12 +11,47 @@ settings:
       __assoc__:
         -
           - uid
+          - 65bae62c-5a79-482e-8a75-d25e2e6b5db9 # Text
+    -
+      __assoc__:
+        -
+          - uid
+          - d3e47ddf-ffb1-40fb-b953-e672c3e1189d # Überschrift
+    -
+      __assoc__:
+        -
+          - uid
           - 364db758-c9ca-4923-8a45-9ff5998f1177 # Hero
     -
       __assoc__:
         -
           - uid
           - f11d8cff-ef16-421a-bd8e-0b5ef8bf7d35 # Preistabelle
+    -
+      __assoc__:
+        -
+          - uid
+          - 92c57ec0-5273-4902-b4c0-0f8822b1cc44 # Kacheln
+    -
+      __assoc__:
+        -
+          - uid
+          - 67ffc14d-cebe-414d-9b1d-79ffb3ab79d8 # Akkordeon
+    -
+      __assoc__:
+        -
+          - uid
+          - 40d98e48-df4c-4099-b3bb-1b9676026398 # Feature
+    -
+      __assoc__:
+        -
+          - uid
+          - 4b89c9c4-5ce6-4768-8ec5-181b178b657a # Quicklinks
+    -
+      __assoc__:
+        -
+          - uid
+          - 4cbe7665-178f-41ee-940d-46f66528b008 # Newsletter
   includeTableView: false
   maxEntries: null
   minEntries: null

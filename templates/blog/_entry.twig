@@ -1,0 +1,35 @@
+{% extends '_layouts/global' %}
+
+{% block site %}
+
+<section class="py-48">
+    <div class="container mx-auto px-6">
+        <div class="xl:grid grid-cols-12 mb-10 gap-10">
+            <a href="{{ url('blog') }}" class="text-base lg:text-lg col-span-2 lg:mt-5 mb-3 lg:mb-0 block">&larr; {{ "Zurück zur Übersicht"|t('blog') }}</a>
+            <div class="col-span-10">
+                {% include '_components/headline.twig' with { headline: entry.title, level: 'h1' } %}
+            </div>
+        </div>
+        <div class="xl:grid grid-cols-12">
+            <div class="col-start-3 col-span-10">
+                <div class="xl:pl-40">
+                        <article class="">
+                            {% if entry.image|length > 0 %}
+                                <img src="{{ entry.image[0].getUrl('photo900x600') }}" alt="{{ entry.title }}" class="w-full rounded-3xl object-cover mb-10">
+                            {% endif %}
+                            <div class="text-lg mb-5">
+                                <span class="text-sm block mb-10">{{ entry.postDate.format('d.m.Y') }}</span>
+                                <div class="prose max-w-none text-gray-500 prose-p:text-xl prose-ul:text-xl prose-ol:text-xl">
+                                    {{ entry.richtext}}
+                                </div>
+                            </div>
+                            
+                        </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+
+{% endblock %}

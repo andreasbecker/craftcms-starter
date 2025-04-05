@@ -6,6 +6,15 @@
 
         {% include '_blocks/' ~ block.type.handle %}
 
+    {% else %}
+        <div class="container max-w-2xl mx-auto grid h-[200vh]">
+            <div class="prose prose-p:mb-5 pt-40">
+                {% include '_components/headline' with { headline: "Los geht's!", level: "h1" } %}
+                <p>Füge im CMS unter "Einträge" &rarr; "Einzeleinträge" &rarr; "Startseite" Abschnitte hinzu.</p>
+                <p>Füge im CMS unter "Einträge" &rarr; "Seiten" neue Seiten hinzu.</p>
+                <p>Füge im CMS unter "Navigation" &rarr; "Hauptnavigation" Navigationspunkte hinzu.</p>
+            </div>
+        </div>
     {% endfor %}
 
 {% endblock %}

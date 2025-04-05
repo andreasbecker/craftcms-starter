@@ -192,7 +192,7 @@ permissions:
     enabled: '1'
 propagationMethod: all
 siteSettings:
-  08c386f4-5a41-4c9f-8282-f6785af06bfc: # Craft CMS Starter
+  08c386f4-5a41-4c9f-8282-f6785af06bfc: # $CRAFT_SITE_NAME
     enabled: true
 sortOrder: 1
 structure:

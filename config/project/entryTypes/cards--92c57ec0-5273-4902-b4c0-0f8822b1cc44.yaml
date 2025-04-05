@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  57c30fa8-00a6-4224-9578-1f0bd2567a37:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T08:09:30+00:00'
+            elementCondition: null
+            fieldUid: bd277d28-2561-4ffa-bb56-d29e61f40870 # Kacheln
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dbef2a2b-2e49-4fe4-ba44-32341492a227
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: ba073e48-03bf-4659-bc28-853984e47019
+        userCondition: null
+handle: cards
+hasTitleField: false
+icon: block-brick
+name: Kacheln
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

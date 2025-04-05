@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: cards
+instructions: null
+name: Kacheln
+searchable: false
+settings:
+  createButtonLabel: 'Neue Kachel'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - ee4adb9d-e97b-4a9d-82ee-50c9e59cc4af # Kachel
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

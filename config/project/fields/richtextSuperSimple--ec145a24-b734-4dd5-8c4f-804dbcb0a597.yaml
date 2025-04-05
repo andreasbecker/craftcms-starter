@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: richtextSuperSimple
+instructions: null
+name: Text
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: d29cc99e-e0e0-422a-b0e6-23081fcd05f7
+  createButtonLabel: null
+  defaultTransform: null
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

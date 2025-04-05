@@ -1,0 +1,118 @@
+color: null
+fieldLayouts:
+  d7f7cdd2-263c-4824-b429-c32d573703b3:
+    cardView:
+      - 'layoutElement:fd5ee194-faec-4285-a282-22e7508bb5f6'
+      - 'layoutElement:da6c6950-020c-4eb0-b226-f57247123305'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-31T09:02:09+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6596b956-b544-410e-9c1c-b97071213e17
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T09:05:30+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Anlesetext
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31c858d9-415a-4fd1-ad2f-779f54e12052
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T09:05:30+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: price
+            includeInCards: true
+            instructions: null
+            label: Preis
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd5ee194-faec-4285-a282-22e7508bb5f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T09:18:06+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: priceAddon
+            includeInCards: true
+            instructions: null
+            label: Preiszusatz
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da6c6950-020c-4eb0-b226-f57247123305
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-31T09:05:30+00:00'
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Einfach
+            handle: features
+            includeInCards: false
+            instructions: null
+            label: Features
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9dd719af-3b02-49ab-9da9-32a1930e7d55
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2b6a3129-cee9-4249-99b8-04b79375b01a
+        userCondition: null
+handle: preis
+hasTitleField: true
+icon: null
+name: Preis
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

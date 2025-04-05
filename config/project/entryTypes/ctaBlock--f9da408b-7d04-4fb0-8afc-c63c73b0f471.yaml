@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  d1ca2a7e-018d-4db8-a427-17d4e189116b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-03T15:35:15+00:00'
+            elementCondition: null
+            fieldUid: 69e7dd36-a066-4dde-a4b8-8369e87812b6 # CTA-Blöcke
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5195bf50-8ad6-461d-af9c-48ee364efe4d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d615e2c1-94bc-43b2-979e-7c366a05c06d
+        userCondition: null
+handle: ctaBlock
+hasTitleField: false
+icon: null
+name: CTA-Block
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

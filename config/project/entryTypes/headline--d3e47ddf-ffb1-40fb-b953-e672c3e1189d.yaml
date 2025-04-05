@@ -1,0 +1,163 @@
+color: null
+fieldLayouts:
+  cda2501f-2d63-4134-8f8b-59f206e8e189:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T12:26:04+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: topline
+            includeInCards: false
+            instructions: null
+            label: Topline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eae26578-e134-4c95-8642-ef32be48ab01
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-15T10:37:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Überschrift
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2e6c84cb-d52f-4a36-88e9-3d9a967398c6
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-28T18:11:17+00:00'
+            elementCondition: null
+            fieldUid: 83325065-edab-4572-986b-e65f6b7cb108 # Überschrift Größe
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0202264d-cb39-4b6a-aed6-d3e0645be0e9
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T16:56:31+00:00'
+            elementCondition: null
+            fieldUid: c4366270-fb71-48ba-ba8f-f8c33149b695 # Abstand unten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d83f4760-57df-4272-a7d4-efc037176134
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T16:56:31+00:00'
+            elementCondition: null
+            fieldUid: 0b2eb52b-6305-475a-a893-015343c2face # Abstand oben
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33ce5136-5c45-4219-8b1f-8c2d72de129a
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-29T17:22:53+00:00'
+            elementCondition: null
+            fieldUid: 2c4c6650-5072-4f62-887a-902b99755342 # Trennlinie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4aa20e4-6309-4725-bc38-6410d3d3bfa1
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-31T12:26:04+00:00'
+            elementCondition: null
+            fieldUid: d1fb9399-c8d1-45ae-b34d-37d25d5b7004 # Ausrichtung
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b89e8ccf-0b71-4933-86d7-d577fb967253
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-15T10:40:16+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: subline
+            includeInCards: false
+            instructions: null
+            label: Anlesetext
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56662f24-e89b-49af-8a30-f76f5b285a67
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 269a69d1-2a2d-47e7-a7c5-161088f56096
+        userCondition: null
+handle: headline
+hasTitleField: true
+icon: align-center
+name: Überschrift
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

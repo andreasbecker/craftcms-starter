@@ -1,0 +1,115 @@
+{#
+
+Image
+Global image element.
+
+Usage:
+{% include '_components/image' with {
+    'image': image,                      // Required: Craft image asset
+    'class': 'lazyload',                // Optional: CSS class
+    'alt': 'Image description',         // Optional: Alt text
+    'urlOnly': false,                   // Optional: Return URL only
+    
+    # Transform options (choose one approach):
+    
+    # Option 1: Named transform
+    'transform': 'photo400x300',        // Optional: Named transform from Craft
+    
+    # Option 2: Custom transform parameters
+    'width': 300,                       // Optional: Width in pixels
+    'height': 200,                      // Optional: Height in pixels
+    'format': 'jpg',                    // Optional: Image format
+    'quality': 90,                      // Optional: Image quality
+    'position': 'center-center',        // Optional: Focal point
+    'mode': 'crop',                     // Optional: Resize mode
+    
+    # Responsive options
+    'responsive': true,                 // Optional: Enable responsive images
+    'sizes': '(min-width: 1024px) 50vw, 100vw',  // Optional: Sizes attribute
+    'breakpoints': [375, 640, 768, 1024, 1280, 1320]  // Optional: Breakpoints for srcset
+} %}
+
+#}
+
+{% set image = image ?? null %}
+{% set class = class ?? null %}
+{% set urlOnly = urlOnly ?? false %}
+{% set thumb = transform ?? null %}
+{% set alt = alt ?? null %}
+{% set responsive = responsive ?? false %}
+{% set sizes = sizes ?? '(min-width: 1024px) 50vw, 100vw' %}
+{% set breakpoints = breakpoints ?? [375, 640, 768, 1024, 1280, 1320] %}
+
+
+{% if image|length %}
+
+    {% if not thumb %}
+        {% set thumb = {
+            mode: mode ?? 'crop',
+            width: width ?? null,
+            height: height ?? null,
+            quality: quality ?? 85,
+            format: format ?? null,
+            position: position ?? 'center-center'
+        } %}
+    {% endif %}
+
+    {% if not urlOnly %}
+        {% if responsive %}
+            {% set srcset = [] %}
+            {% set baseThumb = {} %}
+            
+            {# Create a base transform that will be used for all responsive variants #}
+            {% if thumb is iterable %}
+                {# If we have a transform object, use it as base but remove width to be replaced by breakpoints #}
+                {% set baseThumb = thumb|merge({}) %}
+                {% if baseThumb.width is defined %}
+                    {% set baseThumb = baseThumb|filter((value, key) => key != 'width') %}
+                {% endif %}
+            {% elseif thumb is not empty and thumb is not iterable %}
+                {# If we have a named transform, we'll ignore it for responsive variants #}
+                {# but we'll keep it for the fallback src #}
+            {% else %}
+                {# If no transform specified, create one from individual parameters #}
+                {% set baseThumb = {
+                    mode: mode ?? 'crop',
+                    height: height ?? null,
+                    quality: quality ?? 85,
+                    format: format ?? null,
+                    position: position ?? 'center-center'
+                } %}
+            {% endif %}
+            
+            {# Generate srcset with different widths #}
+            {% for breakpoint in breakpoints %}
+                {% set responsiveThumb = baseThumb|merge({
+                    width: breakpoint
+                }) %}
+                {% set srcset = srcset|merge([image.getUrl(responsiveThumb) ~ ' ' ~ breakpoint ~ 'w']) %}
+            {% endfor %}
+            
+            <img 
+                src="{{ blurhash(image) }}" 
+                data-src="{{ image.getUrl(thumb) }}" 
+                data-srcset="{{ srcset|join(', ') }}"
+                data-sizes="{{ sizes }}"
+                width="{{ image.getWidth(thumb) }}" 
+                height="{{ image.getHeight(thumb) }}" 
+                class="lazyload {{ class }}" 
+                alt="{{ alt ??? image.alt ??? image.title }}" 
+            />
+        {% else %}
+            {# Not responsive #}
+            <img 
+                src="{{ blurhash(image) }}" 
+                data-src="{{ image.getUrl(thumb) }}" 
+                width="{{ image.getWidth(thumb) }}" 
+                height="{{ image.getHeight(thumb) }}" 
+                class="lazyload {{ class }}" 
+                alt="{{ alt ??? image.alt ??? image.title }}" 
+            />
+        {% endif %}
+    {% else %}
+        {{ image.getUrl(thumb) }}
+    {% endif %}
+{% endif %}

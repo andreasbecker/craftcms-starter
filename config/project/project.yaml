@@ -1,9 +1,9 @@
-dateModified: 1741969535
+dateModified: 1743837094
 email:
   fromEmail: $CRAFT_SYSTEM_EMAIL
   fromName: $CRAFT_SITE_NAME
   replyToEmail: null
-  template: _emails/system.twig
+  template: ''
   transportSettings:
     command: '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025'
   transportType: craft\mail\transportadapters\Sendmail
@@ -15,64 +15,65 @@ fs:
       path: $FILESYSTEM_LOCAL_BASE_PATH
     type: craft\fs\Local
     url: $FILESYSTEM_LOCAL_BASE_URL
-  servd:
-    hasUrls: true
-    name: Servd
-    settings:
-      errorMessage: 'Unable to find component class ''servd\AssetStorage\AssetsPlatform\Fs''.'
-      expectedType: servd\AssetStorage\AssetsPlatform\Fs
-      settings:
-        __assoc__:
-          -
-            - cdnUrlPattern
-            - ''
-          -
-            - customSubfolder
-            - ''
-          -
-            - makeUploadsPublic
-            - true
-          -
-            - optimisePrefix
-            - ''
-          -
-            - optimiseUrlPattern
-            - ''
-          -
-            - projectSlug
-            - ''
-          -
-            - securityKey
-            - ''
-          -
-            - subfolder
-            - /local/
-    type: craft\fs\MissingFs
-    url: 'https://cdn2.assets-servd.host/'
 meta:
   __names__:
+    0b2eb52b-6305-475a-a893-015343c2face: 'Abstand oben' # Abstand oben
     0b199c11-0b79-4e4b-b931-f9c85e23a667: 'Link / Button' # Link / Button
+    0f276d61-fb4c-45ba-b9b3-b57a7cfe1b14: Slides # Slides
+    1ee87cef-8728-43ce-a4e7-965bf407f8ff: Akkordeon-Einträge # Akkordeon-Einträge
+    2c4c6650-5072-4f62-887a-902b99755342: Trennlinie # Trennlinie
+    3ae1a988-07ef-40a0-8438-62f2201ac267: Text # Text
+    4b89c9c4-5ce6-4768-8ec5-181b178b657a: Quicklinks # Quicklinks
+    4cbe7665-178f-41ee-940d-46f66528b008: Newsletter # Newsletter
     5cbe08b7-b4bd-4a6b-be41-de9647b5eb19: Bilder # Bilder
     6d792fe4-471d-48ed-bc45-5fe112ba7e46: Bild # Bild
     7b662bcd-ea91-4c91-86ce-c60348c664d1: Seiten # Seiten
     7bf65ac5-9169-4bf8-8825-65fadd566946: New # New
     7f0dd947-99d8-4456-93f3-4ce4f6162a3f: 'Rich Text - Einfach' # Rich Text - Einfach
     8b610edc-f2dd-46b6-9597-96fcbb6d302a: Simple # Simple
-    08c386f4-5a41-4c9f-8282-f6785af06bfc: 'Craft CMS Starter' # Craft CMS Starter
+    08c386f4-5a41-4c9f-8282-f6785af06bfc: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
+    19a2e9a8-611a-4f51-8b0f-e3b9309c4a05: Slider-Typ # Slider-Typ
     19d6d897-1cde-4d59-914a-2bf8a23e7916: 'Public Schema' # Public Schema
+    30e022d9-927c-4da1-aaae-2c8595fbbc7d: Bildposition # Bildposition
     36f64220-1754-471a-8655-6907cc37c65c: Abschnitte # Abschnitte
+    40d98e48-df4c-4099-b3bb-1b9676026398: Feature # Feature
     42eea3c2-2f84-43d8-a495-647d4994a8d5: 'Text - mehrzeilig' # Text - mehrzeilig
+    65bae62c-5a79-482e-8a75-d25e2e6b5db9: Text # Text
+    67ffc14d-cebe-414d-9b1d-79ffb3ab79d8: Akkordeon # Akkordeon
+    69e7dd36-a066-4dde-a4b8-8369e87812b6: CTA-Blöcke # CTA-Blöcke
     79ca1e6a-abf2-498c-90bc-4808b357e371: Hauptnavigation # Hauptnavigation
+    92c57ec0-5273-4902-b4c0-0f8822b1cc44: Kacheln # Kacheln
+    96b89b33-19f3-4c48-b352-69e39db98010: Slider # Slider
+    244e7f48-116c-4969-8e95-b62ac360fc1a: Blog-Übersicht # Blog-Übersicht
     364db758-c9ca-4923-8a45-9ff5998f1177: Hero # Hero
     453f9294-407d-405a-b73b-d5b63aec2eaa: SEO # SEO
     502c0610-e74d-4359-8524-5652307ada64: Abstand # Abstand
+    870c91e4-d0b7-49c2-bfde-6ef0908c97e0: Zitat # Zitat
+    5166e60f-f63e-4512-a223-c62a82f5368e: Call-To-Action # Call-To-Action
+    79697b05-67aa-4e57-b7c0-fbd0dafa8a77: Hintergrundfarbe # Hintergrundfarbe
+    90893a2e-023d-485b-bc6a-50ccbef38178: Erweitert # Erweitert
+    511005a7-3368-4c6b-a09f-9f6c147450e7: Bild(er) # Bild(er)
+    967304f2-4817-43cc-8400-3c0eb2a4e0cc: Blog-Eintrag # Blog-Eintrag
+    1362616b-abbf-4bce-aa51-c6e365d9dda7: Preise # Preise
+    83325065-edab-4572-986b-e65f6b7cb108: 'Überschrift Größe' # Überschrift Größe
     a9e047c8-1338-4261-9956-7e19d74fe428: Startseite # Startseite
+    adc12b72-f66a-4dc2-bf9f-6ef1af31b1c4: 'Foto 900 x Auto' # Foto 900 x Auto
+    b03797de-33b8-4e40-907f-83b51699b4f9: Slide # Slide
     b9ac68e1-d9f1-4007-843f-fde1e9f4921b: Files # Files
+    b9b126e3-6c3b-47e2-abcd-a955ae87f3db: Preis # Preis
+    bd277d28-2561-4ffa-bb56-d29e61f40870: Kacheln # Kacheln
     bdf6317d-0df7-449f-a937-a1a274ffb106: Standardseite # Standardseite
+    c4366270-fb71-48ba-ba8f-f8c33149b695: 'Abstand unten' # Abstand unten
     cb6226c7-5901-41ed-ba28-a78b9504a3df: Images # Images
+    cc0f830b-8e66-4b4b-bb84-4fea8b80a1eb: Akkordeon-Eintrag # Akkordeon-Eintrag
+    d1fb9399-c8d1-45ae-b34d-37d25d5b7004: Ausrichtung # Ausrichtung
+    d3e47ddf-ffb1-40fb-b953-e672c3e1189d: Überschrift # Überschrift
     d99bf7af-1eb1-4b77-814e-624eeec1a0e3: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
     da9f3d8e-5ba9-4eb9-a423-6ea09ddaed21: Formular # Formular
+    ec145a24-b734-4dd5-8c4f-804dbcb0a597: Text # Text
+    ee4adb9d-e97b-4a9d-82ee-50c9e59cc4af: Kachel # Kachel
     f3e544b8-88bf-4761-8df2-d767fa1502b7: Text # Text
+    f9da408b-7d04-4fb0-8afc-c63c73b0f471: CTA-Block # CTA-Block
     f11d8cff-ef16-421a-bd8e-0b5ef8bf7d35: Preistabelle # Preistabelle
     fb0420bb-0fbf-46d2-afd2-f7992c60c886: 'Contact Form' # Contact Form
 plugins:
@@ -81,6 +82,10 @@ plugins:
     enabled: true
     licenseKey: XO8E4093H0FPPEWU31U2S5HZ
     schemaVersion: 5.9.0
+  blur-hash:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true
@@ -97,17 +102,21 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    licenseKey: HQ90KEZT3AIEK7CQ0VQX7D9D
+    licenseKey: J2SW14EZ9QMF7MAOLPHF47F5
     schemaVersion: 2.1.0
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: 795D0IRXMO0BEU95Z64ILX03
+    licenseKey: 2CET0H0MMBM9U299QVLKJSMO
     schemaVersion: 3.0.12
   vite:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  wordsmith:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0.0
 system:
   edition: pro
   live: true

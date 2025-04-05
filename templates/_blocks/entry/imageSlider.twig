@@ -1,0 +1,18 @@
+{% set slides = entry.images ??? [] %}
+{% set code = entry.code ??? code ??? '{"type":"slide","perPage":1,"gap":"1.5rem"}' %}
+
+{% if slides|length > 0  %}
+<div class="splide" role="group" data-splide='{{ code }}' aria-label="{{ entry.title }}">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for slide in slides %}
+                <li class="splide__slide">
+                    <div class="flex flex-col gap-5">
+                        <img src="{{ slide.getUrl('photo900') }}" alt="{{ slide.title }}" class="rounded-lg">
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endif %}

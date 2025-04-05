@@ -31,7 +31,6 @@ install:
 	if [ -z "$(CRAFT_SYSTEM_EMAIL)" ]; then \
 		read -p "System Email: " system_email; \
 		sed -i '' "s/^CRAFT_SYSTEM_EMAIL=.*/CRAFT_SYSTEM_EMAIL=\"$$system_email\"/" .env || echo "CRAFT_SYSTEM_EMAIL=\"$$system_email\"" >> .env; \
-		sed -i '' "s/^CRAFT_TEST_TO_EMAIL_ADDRESS=.*/CRAFT_TEST_TO_EMAIL_ADDRESS=\"$$system_email\"/" .env || echo "CRAFT_TEST_TO_EMAIL_ADDRESS=\"$$system_email\"" >> .env; \
 	fi; \
 	ddev exec php craft plugin/install seomatic
 	ddev exec php craft plugin/install vite
@@ -40,6 +39,8 @@ install:
 	ddev exec php craft plugin/install minify
 	ddev exec php craft plugin/install ckeditor
 	ddev exec php craft plugin/install navigation
+	ddev exec php craft plugin/install wordsmith
+	ddev exec php craft plugin/install blurhash
 	ddev exec php craft up --interactive=0
 	ddev exec php craft update all
 	ddev launch; \

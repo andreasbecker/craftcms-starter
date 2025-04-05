@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  ce2ec4c5-453e-497a-ba2f-8215ba3ae581:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-04-03T15:33:26+00:00'
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Einfach
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf3b4a23-aad0-411c-b418-5ab9a77d9be1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-03T15:33:26+00:00'
+            elementCondition: null
+            fieldUid: 0b199c11-0b79-4e4b-b931-f9c85e23a667 # Link / Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef513675-f59d-458b-a947-803e08f1937d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 890d6760-fa5a-41c6-8d47-83c569529cfb
+        userCondition: null
+handle: cta
+hasTitleField: false
+icon: null
+name: Call-To-Action
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

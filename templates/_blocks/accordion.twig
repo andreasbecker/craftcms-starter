@@ -1,0 +1,53 @@
+{% import '_utils/padding.twig' as paddingUtils %}
+{% set headline = block.title ??? headline ??? '' %}
+{% set accordion = block.accordionEntries.all() ??? accordion ??? '' %}
+{% set anker = block.anker ??? anker ??? '' %}
+{% set paddingTop = block.paddingTop ??? paddingTop ??? '' %}
+{% set paddingBottom = block.paddingBottom ??? paddingBottom ??? '' %}
+
+<section {% if anker %}id="{{ anker }}"{% endif %} class="{{ paddingUtils.getPaddingClasses(paddingTop, paddingBottom) }}">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-12">
+            <div class="lg:col-start-3 col-span-12 lg:col-span-10">
+                <div class="lg:pl-40">
+                        <div x-data="{ active: 0 }" class="mx-auto min-h-[16rem] w-full">
+                            {% for item in accordion %}
+                                <div x-data="{
+                                    id: {{ loop.index }},
+                                    get expanded() {
+                                        return this.active === this.id
+                                    },
+                                    set expanded(value) {
+                                        this.active = value ? this.id : null
+                                    },
+                                }" role="region" class="block border-b border-primary pb-4 pt-4 first:pt-0 last:border-b-0 last:pb-0">
+                                    <h3>
+                                        <button
+                                            type="button"
+                                            x-on:click="expanded = !expanded"
+                                            :aria-expanded="expanded"
+                                            class="group flex w-full items-start cursor-pointer justify-between text-left font-medium"
+                                        >
+                                            <span class="flex-1 text-3xl inline-block mb-3">{{ item.title }}</span>
+                                            
+                                            {# Icon close #}
+                                            <svg x-cloak :class="{ 'rotate-45': !expanded }" class="size-5 transition-all shrink-0  group-hover:bg-white bg-white/70 p-2 box-content rounded-full" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+                                                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                                            </svg>
+
+                                       
+                                        </button>
+                                    </h3>
+
+                                    <div x-show="expanded" x-collapse>
+                                        <div class="pt-2 mb-5 text-gray-500 prose max-w-none">{{ item.text }}</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

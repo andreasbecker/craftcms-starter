@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: slides
+instructions: null
+name: Slides
+searchable: false
+settings:
+  createButtonLabel: 'Neuer Slide'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - b03797de-33b8-4e40-907f-83b51699b4f9 # Slide
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

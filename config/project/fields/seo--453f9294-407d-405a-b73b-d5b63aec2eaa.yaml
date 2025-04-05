@@ -20,5 +20,5 @@ settings:
   twitterEnabledFields: ''
   twitterTabEnabled: ''
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: nystudio107\seomatic\fields\SeoSettings

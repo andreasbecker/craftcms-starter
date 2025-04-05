@@ -1,0 +1,45 @@
+{% extends '_layouts/global' %}
+
+{% block site %}
+
+<section class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                {% include '_components/headline' with {
+                    headline: entry.title,
+                    level: 'h1'
+                } %}
+                <div class="mt-2 text-xl text-gray-500">{{entry.text}}</div>
+                <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+                    {% for post in craft.entries().section('blog').orderBy('postDate desc').all() %}
+                        <article class="relative isolate flex flex-col gap-8 lg:flex-row">
+                            <div class="relative aspect-video sm:aspect-2/1 lg:aspect-3/2 lg:w-64 lg:shrink-0">
+                                {% if post.image %}
+                                <img src="{{ post.image[0].url }}" alt="{{ post.image[0].title }}" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
+                                <div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
+                                {% endif %}
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-x-4 text-xs">
+                                    <time datetime="2020-03-16" class="text-gray-500">{{ post.postDate|date('d.m.Y') }}</time>
+                                </div>
+                                <div class="group relative max-w-xl">
+                                    <h3 class="mt-3 text-xl font-semibold">
+                                        <a href="{{ post.url }}">
+                                            <span class="absolute inset-0"></span>
+                                            {{ post.title }}
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 text-gray-500">{{ post.richtext|chop(limit=20, unit='w', append='...') }}</p>
+                                    <a href="{{ post.url }}" class="mt-5 inline-block text-secondary border-b-2 border-primary">Weiterlesen</a>
+                                </div>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

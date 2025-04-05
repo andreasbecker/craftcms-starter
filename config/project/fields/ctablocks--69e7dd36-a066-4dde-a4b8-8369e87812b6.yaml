@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: ctablocks
+instructions: null
+name: CTA-Blöcke
+searchable: false
+settings:
+  createButtonLabel: 'Neuer CTA'
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 5166e60f-f63e-4512-a223-c62a82f5368e # Call-To-Action
+  includeTableView: false
+  maxEntries: 2
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

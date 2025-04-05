@@ -1,0 +1,30 @@
+{% import '_utils/padding.twig' as paddingUtils %}
+{% import '_utils/images.twig' as image %}
+{% set topValue = paddingTop ?? block.paddingTop ?? 'normal' %}
+{% set bottomValue = paddingBottom ?? block.paddingBottom ?? 'normal' %}
+{% set imagePosition = imagePosition ?? block.imagePosition ?? 'left' %}
+{% set button = button ?? block.linkButton ?? null %}
+
+
+<section class="overflow-hidden bg-white {{ paddingUtils.getPaddingClasses(topValue, bottomValue) }}">
+	<div class="container max-w-7xl px-6 lg:px-8">
+		<div class="mx-auto grid max-w-2xl grid-cols-1 place-items-center gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+			<div class="{{ imagePosition == 'left' ? 'lg:order-2' : 'lg:order-1' }}">
+				<div class="lg:max-w-lg">
+                    {% include '_components/headline.twig' with { headline: block.headline, topline: block.topline } %}
+					<div class="mt-6 text-lg/8 text-gray-500 prose mb-12">
+                        {{ block.text }}
+                    </div>
+                    {% if button %}
+                        <a href="{{ button.url }}" class="btn">{{ button.label }}</a>
+                    {% endif %}
+				</div>
+			</div>
+            {% if block.image|length > 0 %}
+            <div class="{{ imagePosition == 'left' ? 'lg:order-1' : 'lg:order-2' }}">
+                {% include '_components/image.twig' with { image: block.image[0], width: 300 } %}
+            </div>
+            {% endif %}
+		</div>
+	</div>
+</section>

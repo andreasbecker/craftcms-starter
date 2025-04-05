@@ -1,0 +1,149 @@
+color: null
+fieldLayouts:
+  8f5b1182-024f-4a8d-9bdb-b9971bfa0081:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-31T11:08:33+00:00'
+            elementCondition: null
+            fieldUid: 0b2eb52b-6305-475a-a893-015343c2face # Abstand oben
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c275ff20-9494-4004-900b-0dfdb9fcd1f0
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-31T11:08:33+00:00'
+            elementCondition: null
+            fieldUid: c4366270-fb71-48ba-ba8f-f8c33149b695 # Abstand unten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be682855-2b4e-4779-8a49-6be0db2282e3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-03-31T11:45:43+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: topline
+            includeInCards: false
+            instructions: null
+            label: Topline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a5ceb50-7a98-4659-8a07-ab4a740cb4c1
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-03-28T16:54:39+00:00'
+            elementCondition: null
+            fieldUid: f3e544b8-88bf-4761-8df2-d767fa1502b7 # Text
+            handle: headline
+            includeInCards: false
+            instructions: null
+            label: Überschrift
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8c6b1a4-a35b-411b-8a31-409c70f78985
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-03-28T16:54:39+00:00'
+            elementCondition: null
+            fieldUid: 7f0dd947-99d8-4456-93f3-4ce4f6162a3f # Rich Text - Einfach
+            handle: text
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb77734f-be79-431e-a660-a2561bf65d4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T16:54:39+00:00'
+            elementCondition: null
+            fieldUid: 0b199c11-0b79-4e4b-b931-f9c85e23a667 # Link / Button
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 687dddc2-74f4-44a7-9713-93e75d9d7235
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-28T16:54:39+00:00'
+            elementCondition: null
+            fieldUid: 6d792fe4-471d-48ed-bc45-5fe112ba7e46 # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69544355-e52e-4bb6-8ca6-136e76a4503d
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-03-28T16:54:39+00:00'
+            elementCondition: null
+            fieldUid: 30e022d9-927c-4da1-aaae-2c8595fbbc7d # Bildposition
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f70c1935-2dc4-43c3-b875-4ca945a5b18f
+            userCondition: null
+            warning: null
+            width: 25
+        name: Inhalt
+        uid: 56ec9cbe-1065-4728-87e4-bc02f7bf4f03
+        userCondition: null
+handle: feature
+hasTitleField: false
+icon: null
+name: Feature
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

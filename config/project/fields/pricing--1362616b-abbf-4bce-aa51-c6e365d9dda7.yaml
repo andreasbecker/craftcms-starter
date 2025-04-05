@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: pricing
+instructions: null
+name: Preise
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: 'Preis hinzufügen'
+  showCardsInGrid: true
+  showSiteMenu: false
+  sources:
+    - 'section:12efdeb8-a0f4-4008-a89e-cdb745a89a2e'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

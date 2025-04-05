@@ -1,0 +1,15 @@
+{% set text = block.text ??? text ??? null %}
+{% set button = block.linkButton ??? button ??? null %}
+{% set alignment = text.alignment ??? alignment ??? 'center' %}
+{% set anker = block.anker ??? anker ??? '' %}
+
+{% if text %}
+    <div {% if anker %}id="{{ anker }}"{% endif %} class="p-10 bg-lachs rounded-2xl flex flex-col self-start items-center mb:mb-10 max-w-xl">
+        <div class="pb-4 prose prose-p:text-xl prose-li:marker:text-black">
+            {{ text }}
+        </div>
+        {% if button %}
+            <a href="{{ button.url }}" class="btn border-shadow-beere ">{{ button.label }}</a>
+        {% endif %}
+    </div>
+{% endif %}

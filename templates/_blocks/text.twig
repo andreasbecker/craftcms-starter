@@ -1,0 +1,11 @@
+{% import '_utils/padding.twig' as paddingUtils %}
+{% set topValue = paddingTop ?? block.paddingTop ?? 'normal' %}
+{% set bottomValue = paddingBottom ?? block.paddingBottom ?? 'normal' %}
+
+<section class="bg-white {{ paddingUtils.getPaddingClasses(topValue, bottomValue) }}">
+	<div class="container max-w-7xl px-6 lg:px-8">
+		<div class="mt-6 text-lg/8 text-gray-500 prose mb-12">
+			{{ block.richtext }}
+		</div>
+	</div>
+</section>

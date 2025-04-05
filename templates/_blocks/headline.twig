@@ -1,0 +1,29 @@
+{% import '_utils/padding.twig' as paddingUtils %}
+{% set topValue = paddingTop ?? block.paddingTop ?? 'normal' %}
+{% set bottomValue = paddingBottom ?? block.paddingBottom ?? 'normal' %}
+
+{% import '_utils/border.twig' as borderUtils %}
+{% set borderPosition = borderPosition ?? block.border ?? 'none' %}
+{# Make sure borderPosition is a string and trimmed #}
+{% set borderPosition = borderPosition|default('none')|trim %}
+
+{% set alignment = block.alignment ?? 'center' %}
+{% set alignmentClass = alignment == 'center' ? 'text-center' : (alignment == 'right' ? 'text-right' : 'text-left') %}
+
+
+<section class="{{ paddingUtils.getPaddingClasses(topValue, bottomValue) }} {{ borderUtils.getBorderClasses(borderPosition, 'primary') }}">
+    <div class="container">
+        <div class="grid grid-cols-1 {{ alignment == 'center' ? 'justify-items-center' : (alignment == 'right' ? 'justify-items-end' : 'justify-items-start') }}">
+            <div class="max-w-3xl {{ alignmentClass }}">
+                {% include '_components/headline' with {
+                    headline: block.title,
+                    topline: block.topline,
+                    level: block.headlineSize,
+                } %}
+                {% if block.subline %}
+                    <p class="mt-8 text-lg text-pretty text-gray-500 sm:text-xl/8">{{block.subline}}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+{% set headline = headline ?? null %}
+{% set topline = topline ?? null %}
+{% set level = level|default('h2') %}
+{% set id = id ?? null %}
+{% set class = class|default('headline headline-' ~ level|replace({'h': ''})) %}
+{% set attr = attr ?? {} %}
+
+{% set headlineTag = '<' ~ level ~ '></' ~ level ~ '>' %}
+
+{# Render headline #}
+{% if topline|length %}
+    <span class="text-base/7 font-semibold border-b-2 border-primary inline-block mb-4">{{ topline }}</span>
+{% endif %}
+{% if headline|length %}
+    {{ headlineTag|attr({
+        'id': id,
+        'class': [
+            'headline',
+            class
+        ]|join(' ')
+    })|attr(attr)|append(headline) }}
+{% endif %}
